@@ -43,8 +43,32 @@ class LinkedList {
         this.size ++;
     }
     // insertAt(element, location) 
-    insertAt(element, location){
-        
+    insertAt(element, index){
+        //check for validity
+        if(index > 0 && index > this.size){
+            return false;
+        }else{
+            //create new node
+            var node = new node(element);
+            var current;
+            var previous;
+            current = this.head;
+
+            // add the element to the 
+            // first index 
+            if(node.next ==0 ){
+                node.next = head;
+                this.head = node;
+            }else{
+                //iterate through the linkedlist to index
+                current = this.head;
+                var turn = 0;
+                while(turn < index){
+                    previous = current;
+                    current = current.next;
+                }
+            }
+        }
     }
     // removeFrom(location) 
     // removeElement(element) 
