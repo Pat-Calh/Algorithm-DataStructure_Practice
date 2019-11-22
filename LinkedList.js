@@ -32,9 +32,20 @@ class LinkedList {
         }
         else{
             current = this.head;
+
+            //place at end of list
+            while(current.next != null){
+                current = current.next();
+            }
+
+            current.next = node;
         }
+        this.size ++;
     }
     // insertAt(element, location) 
+    insertAt(element, location){
+        
+    }
     // removeFrom(location) 
     // removeElement(element) 
   
