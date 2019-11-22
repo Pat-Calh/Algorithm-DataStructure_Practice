@@ -66,6 +66,7 @@ class LinkedList {
                 while(turn < index){
                     previous = current;
                     current = current.next;
+                    turn ++;
                 }
             }
         }
